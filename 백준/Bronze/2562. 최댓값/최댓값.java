@@ -18,9 +18,6 @@ public class Main {
                 max = next;
                 cnt = i+1;
             }
-            else {
-
-            }
         }
 
         bw.write(String.valueOf(max + "\n" + cnt));
