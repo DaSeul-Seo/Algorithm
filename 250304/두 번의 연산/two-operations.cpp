@@ -4,7 +4,6 @@ using namespace std;
 
 int main() {
     int a;
-    int rst;
 
     cin >> a;
 
@@ -13,10 +12,10 @@ int main() {
     }
 
     if (a % 3 == 0) {
-        rst = a/3;
+        a = a/3;
     }
 
-    cout << rst;
+    cout << a;
 
     return 0;
 }
