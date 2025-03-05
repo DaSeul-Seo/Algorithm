@@ -6,14 +6,10 @@ int main() {
     int n;
     cin >> n;
     int i = 1;
-    int cnt = 1;
 
-    while(n / i > 0) {
+    while(n / i > 1) {
         n = n / i;
-        cnt++;
         i++;
     }
-
-    cout << cnt;
-    return 0;
+    cout << i;
 }
