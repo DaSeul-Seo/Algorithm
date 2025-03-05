@@ -9,9 +9,8 @@ int main() {
 
     for (int i = 0; i < n; i++) {
         cin >> a;
-        if (a % 3 == 0) {
-            cout << a << "\n";
-        }
+        if (a % 3 != 0) continue;
+        cout << a << "\n";
     }
     return 0;
 }
