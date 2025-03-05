@@ -8,7 +8,7 @@ int main() {
     int i = 1;
     int cnt = 1;
 
-    while(n / i != 0) {
+    while(n / i > 0) {
         n = n / i;
         cnt++;
         i++;
