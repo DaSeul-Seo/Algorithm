@@ -33,14 +33,17 @@ public class Main {
             StringBuilder sb = new StringBuilder();
 
             int L = Integer.parseInt(br.readLine());
+            long MOD = 1234567891L;
             String str = br.readLine();
 
             char[] list = str.toCharArray();
 
-            int result = 0;
+            long result = 0;
+            long power = 1;
             for (int i = 0; i < L; i++) {
                 int value = list[i] - 'a' + 1;
-                result += value * Math.pow(31, i);
+                result = (result + value * power) % MOD;
+                power = (power * 31) % MOD;
             }
 
             sb.append(result);
